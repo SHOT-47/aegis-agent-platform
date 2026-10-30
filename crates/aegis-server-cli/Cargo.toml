@@ -1,0 +1,34 @@
+[package]
+name = "aegis-server-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "aegis"
+path = "src/main.rs"
+
+[dependencies]
+aegis-core = { path = "../aegis-core" }
+aegis-storage = { path = "../aegis-storage" }
+aegis-policy = { path = "../aegis-policy" }
+aegis-events = { path = "../aegis-events" }
+aegis-indexing = { path = "../aegis-indexing" }
+aegis-context = { path = "../aegis-context" }
+aegis-models = { path = "../aegis-models" }
+aegis-browser = { path = "../aegis-browser" }
+aegis-extensibility = { path = "../aegis-extensibility" }
+aegis-harness = { path = "../aegis-harness" }
+tokio.workspace = true
+axum.workspace = true
+tower.workspace = true
+tower-http.workspace = true
+clap.workspace = true
+ratatui.workspace = true
+crossterm.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+sha2.workspace = true
+hex.workspace = true
+anyhow.workspace = true

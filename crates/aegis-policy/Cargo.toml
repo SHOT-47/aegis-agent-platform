@@ -1,0 +1,13 @@
+[package]
+name = "aegis-policy"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+aegis-core = { path = "../aegis-core" }
+aegis-storage = { path = "../aegis-storage" }
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+url.workspace = true

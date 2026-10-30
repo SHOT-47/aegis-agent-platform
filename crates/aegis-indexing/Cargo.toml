@@ -1,0 +1,13 @@
+[package]
+name = "aegis-indexing"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+aegis-core = { path = "../aegis-core" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+hex.workspace = true
+regex.workspace = true
+chrono.workspace = true

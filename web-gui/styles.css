@@ -1,0 +1,18 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #0b0f19; color: #e2e8f0; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; background: #111827; border-bottom: 1px solid #1f2937; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-badge { background: #2563eb; color: #fff; font-weight: 700; padding: 4px 10px; border-radius: 6px; }
+.status-pill { padding: 4px 10px; border-radius: 999px; background: rgba(16, 185, 129, 0.2); color: #34d399; }
+.workspace-tabs { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 20px; background: #0f172a; }
+.tab-btn { background: #1e293b; color: #94a3b8; border: 1px solid #334155; padding: 8px 14px; border-radius: 6px; cursor: pointer; }
+.tab-btn.active { background: #2563eb; color: #fff; }
+.workspace-container { padding: 20px; }
+.workspace-panel { display: none; }
+.workspace-panel.active { display: block; }
+.step-list { list-style: none; display: flex; flex-direction: column; gap: 6px; margin: 12px 0; }
+.step-list li { background: #111827; border: 1px solid #1e293b; padding: 8px; border-radius: 6px; }
+.state-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+.state-chip { padding: 4px 8px; border-radius: 4px; background: #1e293b; color: #94a3b8; font-size: 0.8rem; }
+.state-chip.active { background: #059669; color: #fff; }
+button { padding: 8px 12px; border-radius: 6px; border: none; background: #2563eb; color: #fff; cursor: pointer; }

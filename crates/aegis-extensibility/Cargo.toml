@@ -1,0 +1,12 @@
+[package]
+name = "aegis-extensibility"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+aegis-core = { path = "../aegis-core" }
+aegis-policy = { path = "../aegis-policy" }
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+uuid.workspace = true

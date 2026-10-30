@@ -1,0 +1,17 @@
+[package]
+name = "aegis-models"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+aegis-core = { path = "../aegis-core" }
+aegis-policy = { path = "../aegis-policy" }
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+reqwest.workspace = true
+async-trait.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+sha2.workspace = true
+hex.workspace = true

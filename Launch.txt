@@ -1,0 +1,38 @@
+How to Run & Use Your Project on Windows
+
+Open the Web Browser GUI immediately (no compile needed to preview the UI):
+
+code
+
+Powershell
+
+Start-Process "C:\Users\0\Downloads\aegis-agent-platform\web-gui\index.html"
+Compile and run the native Rust runtime & CLI/TUI (requires Rust / Cargo):
+
+code
+
+Powershell
+
+cd C:\Users\0\Downloads\aegis-agent-platform
+
+# Build all 11 Rust crates in release mode
+cargo build --workspace --release
+
+# Run platform diagnostics (models, router, Laya threshold)
+.\target\release\aegis.exe doctor
+
+# Index the codebase incrementally with SHA-256 Merkle tracking
+.\target\release\aegis.exe index --query "PolicyEngine"
+
+# Launch the Terminal TUI
+.\target\release\aegis.exe tui
+
+# Or start the localhost REST + WebSocket API daemon (127.0.0.1:18420)
+.\target\release\aegis.exe serve --bind 127.0.0.1:18420
+
+Or run the Windows PowerShell installer:
+
+code
+
+Powershell
+.\scripts\install.ps1

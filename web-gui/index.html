@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aegis Autonomous AI Coding & Research Agent -- Web GUI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-badge">AEGIS</span>
+      <h1>Autonomous Coding &amp; Research Runtime (127.0.0.1:18420)</h1>
+    </div>
+    <div id="global-activity-state" class="status-pill">Planning</div>
+  </header>
+  <nav class="workspace-tabs">
+    <button class="tab-btn active" data-workspace="ws-main">1. Main Coding Workspace</button>
+    <button class="tab-btn" data-workspace="ws-activity">2. Live Activity &amp; Stuck Monitor</button>
+    <button class="tab-btn" data-workspace="ws-browser">3. Obscura Browser &amp; Scraper</button>
+    <button class="tab-btn" data-workspace="ws-models">4. Local Models &amp; Laya Router</button>
+    <button class="tab-btn" data-workspace="ws-extensibility">5. MCP, Plugins, Skills &amp; Hooks</button>
+    <button class="tab-btn" data-workspace="ws-admin">6. Security, Policy &amp; Vault</button>
+  </nav>
+  <main class="workspace-container">
+    <section id="ws-main" class="workspace-panel active">
+      <h2>12-Step Execution Plan, Chat, Diffs &amp; Exact SHA-256 Command Approval</h2>
+      <ul id="plan-step-list" class="step-list"></ul>
+      <button id="btn-approve-cmd" class="btn-approve">Approve Exact Command SHA-256</button>
+    </section>
+    <section id="ws-activity" class="workspace-panel">
+      <h2>22-State Live Activity Stream &amp; Stage-Aware Stuck Detector</h2>
+      <div id="state-grid" class="state-badges"></div>
+      <ul id="live-event-log" class="step-list"></ul>
+    </section>
+    <section id="ws-browser" class="workspace-panel">
+      <h2>Obscura CDP Session Viewer (Stealth: OFF) &amp; Multi-URL Batch Scraper</h2>
+    </section>
+    <section id="ws-models" class="workspace-panel">
+      <h2>llama.cpp GGUF, NVIDIA TensorRT-LLM &amp; Laya System-1 Confidence Router</h2>
+      <table><tbody id="models-table-body"></tbody></table>
+    </section>
+    <section id="ws-extensibility" class="workspace-panel">
+      <h2>MCP Servers, Sandboxed Plugins, Progressive-Disclosure Skills &amp; 13-Stage Hooks</h2>
+    </section>
+    <section id="ws-admin" class="workspace-panel">
+      <h2>Workspace Boundary Jail, SSRF Guard &amp; Secret Redactor Vault</h2>
+      <textarea id="redactor-input">Key sk-1234567890abcdefghijklmnop</textarea>
+      <button id="btn-test-redactor">Redact</button>
+      <pre id="redactor-output"></pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

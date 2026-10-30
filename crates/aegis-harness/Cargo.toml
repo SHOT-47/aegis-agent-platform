@@ -1,0 +1,17 @@
+[package]
+name = "aegis-harness"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+aegis-core = { path = "../aegis-core" }
+aegis-storage = { path = "../aegis-storage" }
+aegis-policy = { path = "../aegis-policy" }
+aegis-events = { path = "../aegis-events" }
+aegis-indexing = { path = "../aegis-indexing" }
+aegis-context = { path = "../aegis-context" }
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+uuid.workspace = true
